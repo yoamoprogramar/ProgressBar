@@ -118,7 +118,7 @@ public class daoUsuario {
             varPst.setString(1, a.getUsuario());
             varPst.setString(2, a.getPassword());
             varPst.setString(3, a.getNombre());
-            varPst.setInt(5, a.getIdUsuario());   
+            varPst.setInt(4, a.getIdUsuario());   
             varPst.executeUpdate();
             varJsonObjectResultado.put("Result", "OK");
             varPst.close();
